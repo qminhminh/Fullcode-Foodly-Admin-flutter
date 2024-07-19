@@ -11,7 +11,8 @@ import 'package:get/get.dart';
 class PayoutTile extends StatelessWidget {
   const PayoutTile({
     super.key,
-    required this.payout, this.refetch,
+    required this.payout,
+    this.refetch,
   });
 
   final PayoutElement payout;
@@ -32,7 +33,8 @@ class PayoutTile extends StatelessWidget {
         onTap: () {
           Get.to(
             () => PayoutDetailsUpdates(
-              element: payout, refetch: refetch!,
+              element: payout,
+              refetch: refetch!,
             ),
             transition: Transition.cupertino,
             duration: const Duration(milliseconds: 500),

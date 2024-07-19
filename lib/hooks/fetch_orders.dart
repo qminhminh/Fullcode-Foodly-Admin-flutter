@@ -31,7 +31,7 @@ FetchOrders fetchOrders(int page, int limit, String query) {
       } else if (query == "Cancelled") {
         url = Uri.parse(
             '$appBaseUrl/api/orders?page=${controller.cancelled}&orderStatus=$query');
-      }else if (query == "Delivered") {
+      } else if (query == "Delivered") {
         url = Uri.parse(
             '$appBaseUrl/api/orders?page=${controller.delivered}&orderStatus=$query');
       }

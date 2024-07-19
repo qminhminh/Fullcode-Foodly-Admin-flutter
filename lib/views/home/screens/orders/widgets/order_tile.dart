@@ -6,7 +6,6 @@ import 'package:foodly_admin/common/reusable_text.dart';
 import 'package:foodly_admin/constants/constants.dart';
 import 'package:foodly_admin/models/order_model.dart';
 
-
 class OrderTile extends StatelessWidget {
   const OrderTile({
     super.key,
@@ -37,7 +36,7 @@ class OrderTile extends StatelessWidget {
                 color: kOffWhite,
                 borderRadius: BorderRadius.all(Radius.circular(9))),
             child: Container(
-              padding:  EdgeInsets.all(3.h),
+              padding: EdgeInsets.all(3.h),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -52,7 +51,6 @@ class OrderTile extends StatelessWidget {
                               order.orderItems[0].foodId.imageUrl[0],
                               fit: BoxFit.cover,
                             )),
-                       
                       ],
                     ),
                   ),
@@ -70,7 +68,8 @@ class OrderTile extends StatelessWidget {
                           text: order.orderItems[0].foodId.title,
                           style: appStyle(11, kDark, FontWeight.w400)),
                       ReusableText(
-                          text: "Delivery time: ${order.orderItems[0].foodId.time}",
+                          text:
+                              "Delivery time: ${order.orderItems[0].foodId.time}",
                           style: appStyle(9, kGray, FontWeight.w400)),
                       const SizedBox(
                         height: 5,
@@ -82,7 +81,8 @@ class OrderTile extends StatelessWidget {
                             scrollDirection: Axis.horizontal,
                             itemCount: order.orderItems[0].additives.length,
                             itemBuilder: (context, i) {
-                              final addittives = order.orderItems[0].additives[i];
+                              final addittives =
+                                  order.orderItems[0].additives[i];
                               return Container(
                                 margin: const EdgeInsets.only(right: 5),
                                 decoration: const BoxDecoration(
@@ -136,9 +136,7 @@ class OrderTile extends StatelessWidget {
                     color: kSecondary,
                     borderRadius: BorderRadius.all(Radius.circular(10))),
                 child: GestureDetector(
-                  onTap: () {
-                   
-                  },
+                  onTap: () {},
                   child: const Center(
                     child: Icon(
                       MaterialCommunityIcons.cart_plus,

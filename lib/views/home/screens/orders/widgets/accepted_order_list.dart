@@ -12,7 +12,7 @@ class DeliveringOrders extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
-     final controller = Get.put(OrderPagesController());
+    final controller = Get.put(OrderPagesController());
     final data = fetchOrders(1, 6, "Out_for_delivery");
 
     final orders = data.orders;

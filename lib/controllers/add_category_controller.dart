@@ -32,7 +32,8 @@ class AddCategoryController extends GetxController {
       final response = await http.post(url, headers: headers, body: data);
 
       if (response.statusCode == 201) {
-        Get.snackbar("Successfully added a category ", "Enjoy your awesome experience",
+        Get.snackbar(
+            "Successfully added a category ", "Enjoy your awesome experience",
             colorText: kLightWhite,
             backgroundColor: kPrimary,
             icon: const Icon(Ionicons.fast_food_outline));

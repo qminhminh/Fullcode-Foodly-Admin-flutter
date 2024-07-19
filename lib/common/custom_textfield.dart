@@ -12,7 +12,8 @@ class CustomTextField extends StatelessWidget {
       this.validator,
       this.suffixIcon,
       this.obscureText,
-      this.onEditingComplete, this.maxLines});
+      this.onEditingComplete,
+      this.maxLines});
 
   final TextEditingController controller;
   final String hintText;

@@ -36,8 +36,6 @@ FetchPayouts fetchPayouts(String status) {
 
       final response = await http.get(url);
 
-      
-
       if (response.statusCode == 200) {
         var data = jsonDecode(response.body);
         payouts.value = Payout.fromJson(data).payouts;

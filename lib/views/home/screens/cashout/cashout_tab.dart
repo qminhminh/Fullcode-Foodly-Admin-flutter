@@ -17,8 +17,7 @@ class CashOutTab extends StatelessWidget {
       height: 25.h,
       width: width,
       decoration: BoxDecoration(
-          color: kLightWhite,
-          borderRadius: BorderRadius.circular(25.r)),
+          color: kLightWhite, borderRadius: BorderRadius.circular(25.r)),
       child: TabBar(
           controller: _tabController,
           dividerColor: Colors.transparent,
@@ -27,8 +26,7 @@ class CashOutTab extends StatelessWidget {
               borderRadius: BorderRadius.circular(25.r)),
           labelPadding: EdgeInsets.zero,
           labelColor: kLightWhite,
-          labelStyle:
-              appStyle(12, kLightWhite, FontWeight.normal),
+          labelStyle: appStyle(12, kLightWhite, FontWeight.normal),
           unselectedLabelColor: kGrayLight,
           tabs: [
             Tab(

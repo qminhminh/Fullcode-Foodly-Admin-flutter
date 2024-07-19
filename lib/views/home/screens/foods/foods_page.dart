@@ -33,7 +33,6 @@ class _FoodsPageState extends State<FoodsPage> with TickerProviderStateMixin {
           const HeadingTitlesWidget(
             title: "Foods",
           ),
-         
           FoodsTab(tabController: _tabController),
           SizedBox(
             height: 10.h,
@@ -51,10 +50,7 @@ class _FoodsPageState extends State<FoodsPage> with TickerProviderStateMixin {
                     height: hieght * 0.59,
                     child: TabBarView(
                       controller: _tabController,
-                      children: const [
-                        AvailableFoodlist(),
-                        SoldOutFoodlist()
-                      ],
+                      children: const [AvailableFoodlist(), SoldOutFoodlist()],
                     ),
                   ),
                 )

@@ -30,8 +30,7 @@ LinearGradient buttonGradient() {
       ]);
 }
 
-const String appBaseUrl =
-    "http://localhost:6015";
+const String appBaseUrl = "http://192.168.137.1:6015";
 
 List<dynamic> tiles = [
   {
@@ -66,7 +65,6 @@ List<dynamic> tiles = [
     "title": "Feedback",
     "imagePath": "assets/icons/feedback_hub.svg",
   },
-
   {
     "title": "More",
     "imagePath": "assets/icons/circled_menu.svg",

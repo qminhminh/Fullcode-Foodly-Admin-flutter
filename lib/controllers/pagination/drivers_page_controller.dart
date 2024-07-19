@@ -11,7 +11,6 @@ class DriversPagesController extends GetxController {
     _verified.value = newPage;
   }
 
-
   final RxInt _pending = 1.obs;
 
   int get pending => _pending.value;
@@ -19,13 +18,12 @@ class DriversPagesController extends GetxController {
   set pending(int newPage) {
     _pending.value = newPage;
   }
-  
-    final RxInt _rejected = 1.obs;
+
+  final RxInt _rejected = 1.obs;
 
   int get rejected => _rejected.value;
 
   set rejected(int newPage) {
     _rejected.value = newPage;
   }
-
 }

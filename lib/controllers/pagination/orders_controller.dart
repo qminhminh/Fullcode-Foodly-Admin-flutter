@@ -11,7 +11,6 @@ class OrderPagesController extends GetxController {
     _placed.value = newPage;
   }
 
-
   final RxInt _delivering = 1.obs;
 
   int get delivering => _delivering.value;

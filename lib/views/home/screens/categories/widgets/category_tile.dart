@@ -30,7 +30,9 @@ class CategoryTile extends StatelessWidget {
                   fit: BoxFit.contain,
                 ),
               ),
-              SizedBox(width: 10.w,),
+              SizedBox(
+                width: 10.w,
+              ),
               ReusableText(
                   text: category.title,
                   style: appStyle(12, kGray, FontWeight.normal)),

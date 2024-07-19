@@ -3,13 +3,12 @@
 import 'package:get/get.dart';
 
 class FeedbackController extends GetxController {
-
-    Function? refecthList;
+  Function? refecthList;
 
   void setData(Function getList) {
     refecthList = getList;
   }
-  
+
   final RxInt _available = 1.obs;
 
   int get available => _available.value;
@@ -17,5 +16,4 @@ class FeedbackController extends GetxController {
   set available(int newPage) {
     _available.value = newPage;
   }
-
 }

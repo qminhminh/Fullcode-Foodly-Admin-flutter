@@ -21,8 +21,9 @@ FetchFeedBack fetchFeedback() {
     isLoading.value = true;
 
     try {
-      Uri url = Uri.parse('$appBaseUrl/api/feedbacks?page=${controller.available}');
-     
+      Uri url =
+          Uri.parse('$appBaseUrl/api/feedbacks?page=${controller.available}');
+
       final response = await http.get(url);
 
       if (response.statusCode == 200) {

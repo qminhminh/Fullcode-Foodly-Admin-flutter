@@ -70,7 +70,8 @@ class StatusController extends GetxController {
         setLoading = false;
         Get.to(() => const HomePage());
 
-        Get.snackbar("Restaurant sucessful deleted", "Enjoy your awesome experience",
+        Get.snackbar(
+            "Restaurant sucessful deleted", "Enjoy your awesome experience",
             colorText: kLightWhite,
             backgroundColor: kPrimary,
             icon: const Icon(Ionicons.fast_food_outline));

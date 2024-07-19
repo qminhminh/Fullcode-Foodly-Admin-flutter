@@ -28,7 +28,6 @@ FetchCategories fetchCategories(
       final response = await http.get(url);
 
       if (response.statusCode == 200) {
-
         var data = categoriesFromJson(response.body);
 
         categories.value = data.categories;

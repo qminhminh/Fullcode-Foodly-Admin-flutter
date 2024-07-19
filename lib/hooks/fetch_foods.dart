@@ -23,9 +23,11 @@ FetchFoods fetchFood(int page, int limit, bool status) {
     try {
       Uri url = Uri.parse('');
       if (status == true) {
-        url = Uri.parse('$appBaseUrl/api/foods?page=${controller.available}&status=$status');
+        url = Uri.parse(
+            '$appBaseUrl/api/foods?page=${controller.available}&status=$status');
       } else {
-        url = Uri.parse('$appBaseUrl/api/foods?page=${controller.available}&status=$status');
+        url = Uri.parse(
+            '$appBaseUrl/api/foods?page=${controller.available}&status=$status');
       }
       final response = await http.get(url);
 

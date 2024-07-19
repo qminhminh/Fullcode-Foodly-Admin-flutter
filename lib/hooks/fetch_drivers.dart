@@ -32,7 +32,9 @@ FetchDrivers fetchDrivers(String status) {
         url = Uri.parse(
             '$appBaseUrl/api/drivers?page=${controller.rejected}&status=$status');
       }
-      final response = await http.get(url,);
+      final response = await http.get(
+        url,
+      );
       if (response.statusCode == 200) {
         var data = driverFromJson(response.body);
 

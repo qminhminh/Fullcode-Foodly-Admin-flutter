@@ -43,7 +43,7 @@ class PaginationController extends GetxController {
     _categories.value = newPage;
   }
 
-    final RxInt _orders = 1.obs;
+  final RxInt _orders = 1.obs;
 
   int get orders => _orders.value;
 

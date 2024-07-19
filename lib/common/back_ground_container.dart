@@ -4,7 +4,9 @@ import 'package:foodly_admin/constants/constants.dart';
 
 class BackGroundContainer extends StatelessWidget {
   const BackGroundContainer({
-    super.key, required this.child, this.color,
+    super.key,
+    required this.child,
+    this.color,
   });
 
   final Widget child;
@@ -15,7 +17,6 @@ class BackGroundContainer extends StatelessWidget {
     return Container(
       width: width,
       height: hieght,
-
       decoration: BoxDecoration(
         color: color,
         borderRadius: BorderRadius.only(

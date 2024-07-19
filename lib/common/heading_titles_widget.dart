@@ -27,7 +27,7 @@ class HeadingTitlesWidget extends StatelessWidget {
         Row(
           children: [
             Padding(
-              padding: const EdgeInsets.only(right : 8.0),
+              padding: const EdgeInsets.only(right: 8.0),
               child: Obx(
                 () => SvgPicture.asset(
                   controller.image.value,
@@ -36,26 +36,29 @@ class HeadingTitlesWidget extends StatelessWidget {
                 ),
               ),
             ),
-            
             ReusableText(
                 text: title, style: appStyle(14, kDark, FontWeight.bold)),
           ],
         ),
-        title == "Restaurants" ? GestureDetector(
-          onTap: onTap,
-          child: const Icon(
-            Ionicons.search_circle,
-            size: 24,
-            color: kPrimary,
-          ),
-        ): title == "Categories" ? GestureDetector(
-          onTap: onTap,
-          child: const Icon(
-            Ionicons.add_circle,
-            size: 24,
-            color: kPrimary,
-          ),
-        ) : const SizedBox.shrink()
+        title == "Restaurants"
+            ? GestureDetector(
+                onTap: onTap,
+                child: const Icon(
+                  Ionicons.search_circle,
+                  size: 24,
+                  color: kPrimary,
+                ),
+              )
+            : title == "Categories"
+                ? GestureDetector(
+                    onTap: onTap,
+                    child: const Icon(
+                      Ionicons.add_circle,
+                      size: 24,
+                      color: kPrimary,
+                    ),
+                  )
+                : const SizedBox.shrink()
       ],
     );
   }

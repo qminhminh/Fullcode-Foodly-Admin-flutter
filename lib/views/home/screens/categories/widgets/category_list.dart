@@ -26,7 +26,6 @@ class CategoryList extends HookWidget {
     final totalPages = data.totalPages;
     final currentPage = data.currentPage;
 
-
     if (isLoading) {
       return const FoodsListShimmer();
     }
@@ -59,21 +58,17 @@ class CategoryList extends HookWidget {
                   return CategoryTile(category: category);
                 }),
           ),
-            Pagination(
-              currentPage: currentPage,
-              refetch: refetch,
-              totalPages: totalPages,
-              onPageChanged: (int value) {
-                controller.categories = value + 1;
-                refetch!();
-              },
-            )
+          Pagination(
+            currentPage: currentPage,
+            refetch: refetch,
+            totalPages: totalPages,
+            onPageChanged: (int value) {
+              controller.categories = value + 1;
+              refetch!();
+            },
+          )
         ],
       ),
     );
   }
 }
-
-
-
-

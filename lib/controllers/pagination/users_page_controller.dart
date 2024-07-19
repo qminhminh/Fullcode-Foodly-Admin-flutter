@@ -11,7 +11,6 @@ class UserPagesController extends GetxController {
     _verified.value = newPage;
   }
 
-
   final RxInt _unverified = 1.obs;
 
   int get unverified => _unverified.value;
@@ -19,5 +18,4 @@ class UserPagesController extends GetxController {
   set unverified(int newPage) {
     _unverified.value = newPage;
   }
-
 }

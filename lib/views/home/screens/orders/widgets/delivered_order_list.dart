@@ -38,7 +38,7 @@ class DeliveredOrders extends HookWidget {
       );
     }
 
-return WrapperWidget(
+    return WrapperWidget(
         currentPage: currentPage,
         refetch: refetch,
         totalPages: totalPages,
@@ -52,6 +52,3 @@ return WrapperWidget(
         }));
   }
 }
-
-
-

@@ -9,7 +9,7 @@ class PayoutsPagesController extends GetxController {
     _pending.value = newPage;
   }
 
-    final RxInt _completed = 1.obs;
+  final RxInt _completed = 1.obs;
 
   int get completed => _completed.value;
 
@@ -17,7 +17,7 @@ class PayoutsPagesController extends GetxController {
     _pending.value = newPage;
   }
 
-    final RxInt _failed = 1.obs;
+  final RxInt _failed = 1.obs;
 
   int get failed => _failed.value;
 

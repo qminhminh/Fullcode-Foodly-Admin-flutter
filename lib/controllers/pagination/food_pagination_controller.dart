@@ -11,7 +11,6 @@ class FoodPagesController extends GetxController {
     _available.value = newPage;
   }
 
-
   final RxInt _soldout = 1.obs;
 
   int get soldout => _soldout.value;
@@ -19,5 +18,4 @@ class FoodPagesController extends GetxController {
   set soldout(int newPage) {
     _soldout.value = newPage;
   }
-
 }

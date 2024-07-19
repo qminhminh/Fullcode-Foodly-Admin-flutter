@@ -4,12 +4,8 @@ import 'package:foodly_admin/constants/constants.dart';
 
 // ignore: must_be_immutable
 class CustomContainer extends StatelessWidget {
-  CustomContainer({
-    super.key,
-    this.containerContent,
-    this.color,
-    this.containerHieght
-  });
+  CustomContainer(
+      {super.key, this.containerContent, this.color, this.containerHieght});
 
   Widget? containerContent;
   Color? color;
@@ -18,14 +14,14 @@ class CustomContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-        height: containerHieght??MediaQuery.of(context).size.height * 0.75,
+        height: containerHieght ?? MediaQuery.of(context).size.height * 0.75,
         child: ClipRRect(
           borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(30.r),
               bottomRight: Radius.circular(30.r)),
           child: Container(
             width: width,
-            color: color?? kOffWhite,
+            color: color ?? kOffWhite,
             child: SingleChildScrollView(child: containerContent),
           ),
         ));

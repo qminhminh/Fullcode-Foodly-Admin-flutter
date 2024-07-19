@@ -32,8 +32,9 @@ class ProfilePage extends StatelessWidget {
         : Scaffold(
             backgroundColor: kPrimary,
             appBar: PreferredSize(
-                preferredSize: Size.fromHeight(50.h),
-                child: const ProfileAppBar()),
+              preferredSize: Size.fromHeight(50.h),
+              child: const ProfileAppBar(),
+            ),
             body: SafeArea(
               child: CustomContainer(
                   containerContent: Column(
@@ -107,30 +108,22 @@ class ProfilePage extends StatelessWidget {
                       physics: const NeverScrollableScrollPhysics(),
                       children: [
                         TilesWidget(
-                          onTap: () {
-                           
-                          },
+                          onTap: () {},
                           title: "My Orders",
                           leading: Ionicons.cart_outline,
                         ),
                         TilesWidget(
-                          onTap: () {
-                          
-                          },
+                          onTap: () {},
                           title: "My Favorites Places",
                           leading: MaterialCommunityIcons.heart_outline,
                         ),
                         TilesWidget(
-                          onTap: () {
-                            
-                          },
+                          onTap: () {},
                           title: "My Reviews",
                           leading: MaterialCommunityIcons.star_outline,
                         ),
                         TilesWidget(
-                          onTap: () {
-                         
-                          },
+                          onTap: () {},
                           title: "Coupons",
                           leading: MaterialCommunityIcons.tag_outline,
                         ),
@@ -148,9 +141,7 @@ class ProfilePage extends StatelessWidget {
                       physics: const NeverScrollableScrollPhysics(),
                       children: [
                         TilesWidget(
-                          onTap: () {
-                            
-                          },
+                          onTap: () {},
                           title: "Shipping addresses",
                           leading: SimpleLineIcons.location_pin,
                         ),

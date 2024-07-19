@@ -26,12 +26,12 @@ class HomeTilesHolder extends StatelessWidget {
         decoration: BoxDecoration(
             color: kLightWhite, borderRadius: BorderRadius.circular(12.r)),
         child: Padding(
-          padding: const EdgeInsets.only(left:8.0),
+          padding: const EdgeInsets.only(left: 8.0),
           child: GridView.builder(
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 6,
-              crossAxisSpacing: 6.0, 
-              mainAxisSpacing: 6.0, 
+              crossAxisSpacing: 6.0,
+              mainAxisSpacing: 6.0,
             ),
             itemCount: tiles.length,
             itemBuilder: (context, index) {
@@ -42,9 +42,8 @@ class HomeTilesHolder extends StatelessWidget {
                 onTap: () {
                   if (tile['title'] == "More") {
                     Get.to(() => const MorePage(),
-                    transition: Transition.downToUp,
-                    duration: const Duration(milliseconds: 500)
-                    );
+                        transition: Transition.downToUp,
+                        duration: const Duration(milliseconds: 500));
                   } else {
                     controller.updatePage = tile['title'];
                     controller.updateImage = tile['imagePath'];

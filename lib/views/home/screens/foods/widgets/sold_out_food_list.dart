@@ -43,7 +43,7 @@ class SoldOutFoodlist extends HookWidget {
         child: Text("No foods found"),
       );
     }
-     return WrapperWidget(
+    return WrapperWidget(
         currentPage: currentPage,
         refetch: refetch,
         totalPages: totalPages,

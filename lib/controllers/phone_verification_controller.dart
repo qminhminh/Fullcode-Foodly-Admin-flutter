@@ -14,8 +14,7 @@ import 'package:http/http.dart' as http;
 class PhoneVerificationController extends GetxController {
   final box = GetStorage();
 
-
-  var _phoneNumber = '+44'.obs;
+  var _phoneNumber = '+84'.obs;
 
   String get phoneNumber => _phoneNumber.value;
 
@@ -48,7 +47,8 @@ class PhoneVerificationController extends GetxController {
       );
 
       if (response.statusCode == 200) {
-        PhoneVerificationData data = phoneVerificationDataFromJson(response.body);
+        PhoneVerificationData data =
+            phoneVerificationDataFromJson(response.body);
 
         box.write("phone_verification", data.phoneVerification);
 

@@ -58,4 +58,3 @@ class PendingDrivers extends HookWidget {
         }));
   }
 }
-

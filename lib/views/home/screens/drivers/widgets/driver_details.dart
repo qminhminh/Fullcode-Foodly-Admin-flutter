@@ -10,7 +10,11 @@ import 'package:foodly_admin/models/driver_model.dart';
 import 'package:foodly_admin/views/home/screens/drivers/widgets/driver_status_button.dart';
 
 class DriverDetails extends StatefulWidget {
-  const DriverDetails({super.key, required this.id, required this.driver, required this.refetch});
+  const DriverDetails(
+      {super.key,
+      required this.id,
+      required this.driver,
+      required this.refetch});
 
   final String id;
   final DriverElement driver;

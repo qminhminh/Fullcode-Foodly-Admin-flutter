@@ -33,7 +33,6 @@ class Pagination extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          
           SizedBox(
             height: 20,
             width: width * 0.8,
@@ -64,7 +63,6 @@ class Pagination extends StatelessWidget {
               },
             ),
           ),
-          
         ],
       ),
     );

@@ -18,7 +18,6 @@ FetchRestaurantData fetchRestaurant(
   final processingOrders = useState<int>(0);
   final restaurantToken = useState<String>('');
   final appiError = useState<ApiError?>(null);
- 
 
   Future<void> fetchData() async {
     isLoading.value = true;

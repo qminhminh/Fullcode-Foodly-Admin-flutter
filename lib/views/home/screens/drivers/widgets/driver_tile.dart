@@ -22,7 +22,7 @@ class DriverTile extends StatelessWidget {
           Get.to(() => DriverDetails(
                 id: driver.id,
                 driver: driver,
-                refetch: refetch! ,
+                refetch: refetch!,
               ));
         },
         child: Stack(

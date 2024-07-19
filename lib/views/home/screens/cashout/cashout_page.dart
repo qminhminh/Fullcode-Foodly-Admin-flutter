@@ -14,7 +14,8 @@ class CashoutPage extends StatefulWidget {
   State<CashoutPage> createState() => _CashoutPageState();
 }
 
-class _CashoutPageState extends State<CashoutPage> with TickerProviderStateMixin {
+class _CashoutPageState extends State<CashoutPage>
+    with TickerProviderStateMixin {
   late final TabController _tabController = TabController(
     length: 3,
     vsync: this,
@@ -23,55 +24,54 @@ class _CashoutPageState extends State<CashoutPage> with TickerProviderStateMixin
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 3,
-      child:  Container(
-          padding: EdgeInsets.symmetric(horizontal: 12.w),
-          color: kOffWhite,
-          width: width,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(
-                height: 5.h,
-              ),
-              const HeadingTitlesWidget(title: "CashOut",),
-              SizedBox(
-                height: 10.h,
-              ),
-              CashOutTab(tabController: _tabController),
-              SizedBox(
-                height: 10.h,
-              ),
-
-              SizedBox(
-                height: hieght * 0.59,
-                width: width,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(10),
-                      child: Container(
-                        color: kLightWhite,
-                         height: hieght * 0.59,
-                        child: TabBarView(
-                          controller: _tabController,
-                          physics: const NeverScrollableScrollPhysics(),
-                          children: const [
-                            PendingPayouts(),
-                            CompletedPayouts(),
-                            FailedPayouts()
-                          ],
-                        ),
+      child: Container(
+        padding: EdgeInsets.symmetric(horizontal: 12.w),
+        color: kOffWhite,
+        width: width,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            SizedBox(
+              height: 5.h,
+            ),
+            const HeadingTitlesWidget(
+              title: "CashOut",
+            ),
+            SizedBox(
+              height: 10.h,
+            ),
+            CashOutTab(tabController: _tabController),
+            SizedBox(
+              height: 10.h,
+            ),
+            SizedBox(
+              height: hieght * 0.59,
+              width: width,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(10),
+                    child: Container(
+                      color: kLightWhite,
+                      height: hieght * 0.59,
+                      child: TabBarView(
+                        controller: _tabController,
+                        physics: const NeverScrollableScrollPhysics(),
+                        children: const [
+                          PendingPayouts(),
+                          CompletedPayouts(),
+                          FailedPayouts()
+                        ],
                       ),
-                    )
-                  ],
-                ),
+                    ),
+                  )
+                ],
               ),
-          
-            ],
-          ),
+            ),
+          ],
         ),
-      );
-  
+      ),
+    );
   }
 }
