@@ -15,8 +15,10 @@ class NotificationService {
     var androidInitialize =
         const AndroidInitializationSettings('notification_icon');
     var iOSInitialize = const DarwinInitializationSettings();
-    var initializationsSettings =
-        InitializationSettings(android: androidInitialize, iOS: iOSInitialize);
+    var initializationsSettings = InitializationSettings(
+        android: androidInitialize,
+        iOS:
+            iOSInitialize); // InitializationSettings: Gộp cấu hình Android và iOS lại thành một đối tượng chung.
     flutterLocalNotificationsPlugin.initialize(initializationsSettings,
         onDidReceiveNotificationResponse: (data) {
       try {
