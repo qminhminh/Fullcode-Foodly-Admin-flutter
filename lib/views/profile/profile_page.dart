@@ -7,6 +7,7 @@ import 'package:foodly_admin/constants/constants.dart';
 import 'package:foodly_admin/controllers/login_controller.dart';
 import 'package:foodly_admin/models/login_response.dart';
 import 'package:foodly_admin/views/auth/widgets/login_redirect.dart';
+import 'package:foodly_admin/views/profile/edit_profile.dart';
 import 'package:foodly_admin/views/profile/widgets/profile_appbar.dart';
 import 'package:foodly_admin/views/profile/widgets/tile_widget.dart';
 import 'package:get/get.dart';
@@ -86,11 +87,19 @@ class ProfilePage extends StatelessWidget {
                                 ],
                               ),
                               GestureDetector(
-                                  onTap: () {},
-                                  child: Padding(
-                                    padding: EdgeInsets.only(top: 12.0.h),
-                                    child: const Icon(Feather.edit, size: 18),
-                                  ))
+                                onTap: () {
+                                  Get.to(
+                                      () => EditProfile(
+                                            user: user!,
+                                          ),
+                                      transition: Transition.fade,
+                                      duration: const Duration(seconds: 2));
+                                },
+                                child: Padding(
+                                  padding: EdgeInsets.only(top: 12.0.h),
+                                  child: const Icon(Feather.edit, size: 18),
+                                ),
+                              ),
                             ],
                           ),
                         ),
