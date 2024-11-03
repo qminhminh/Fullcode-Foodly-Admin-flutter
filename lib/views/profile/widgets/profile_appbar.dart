@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:foodly_admin/common/app_style.dart';
 import 'package:foodly_admin/constants/constants.dart';
@@ -35,11 +34,6 @@ class ProfileAppBar extends StatelessWidget {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SvgPicture.asset(
-                  "assets/icons/usa.svg",
-                  width: 15,
-                  height: 25,
-                ),
                 const SizedBox(
                   width: 5,
                 ),
@@ -51,7 +45,7 @@ class ProfileAppBar extends StatelessWidget {
                 const SizedBox(
                   width: 5,
                 ),
-                Text("USA", style: appStyle(16, kDark, FontWeight.normal)),
+                Text("VN", style: appStyle(16, kDark, FontWeight.normal)),
                 const SizedBox(
                   width: 10,
                 ),
