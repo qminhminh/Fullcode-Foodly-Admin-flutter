@@ -2,7 +2,7 @@
     <application
         android:label="Foodly Admin"
         android:name="${applicationName}"
-        android:icon="@mipmap/admin">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:exported="true"
