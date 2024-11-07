@@ -30,7 +30,7 @@ LinearGradient buttonGradient() {
       ]);
 }
 
-const String appBaseUrl = "http://192.168.137.1:6015";
+const String appBaseUrl = "https://fullcode-backend-admin-foodly.onrender.com";
 
 List<dynamic> tiles = [
   {
